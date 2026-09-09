@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Tokens economics"
+title: "Token economics"
 date: 2026-09-09
 section: problems
 description: "Reflections on AI-assisted development, token economics, and the future of coding."
