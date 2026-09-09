@@ -32,14 +32,22 @@ layout: default
 
     {% for post in site.posts %}
       <article class="post-summary">
-        <h3 class="post-summary-title">
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        </h3>
-        <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">
-          {{ post.date | date: "%B %-d, %Y" }}
-        </time>
-        <p class="post-excerpt">{{ post.content | strip_html | truncatewords: 60 }}</p>
-        <a class="read-more" href="{{ post.url | relative_url }}">Read more &rarr;</a>
+        {% if post.thumbnail %}
+          <a class="post-thumb" href="{{ post.url | relative_url }}" aria-hidden="true">
+            <img src="{{ post.thumbnail | relative_url }}" alt="" loading="lazy">
+          </a>
+        {% endif %}
+
+        <div class="post-summary-body">
+          <h3 class="post-summary-title">
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </h3>
+          <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">
+            {{ post.date | date: "%B %-d, %Y" }}
+          </time>
+          <p class="post-excerpt">{{ post.content | strip_html | truncatewords: 120 }}</p>
+          <a class="read-more" href="{{ post.url | relative_url }}">Read more &rarr;</a>
+        </div>
       </article>
     {% endfor %}
   </div>

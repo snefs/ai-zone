@@ -3,6 +3,7 @@ layout: post
 title: "Thoughts about AI Development"
 date: 2026-08-25
 description: "Reflections on AI-assisted development, token economics, and the future of coding."
+thumbnail: /assets/ai-more-work.png
 ---
 
 ## Is work faster, or do we have more work to manage?

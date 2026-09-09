@@ -3,6 +3,7 @@ layout: post
 title: "Token economics"
 date: 2026-09-09
 description: "Reflections on AI-assisted development, token economics, and the future of coding."
+thumbnail: /assets/ai-outoftokens.png
 ---
 
 ## Token economics

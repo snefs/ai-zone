@@ -4,12 +4,32 @@
 @import "{{ site.theme }}";
 
 /* ==========================================================================
+   Layout: widen the Midnight theme's narrow wrapper so content is readable
+   and the page is adaptively sized, capping at a sensible maximum.
+   ========================================================================== */
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.wrapper section {
+  max-width: 100%;
+}
+
+.wrapper section #title h1 {
+  font-size: 44px;
+}
+
+/* ==========================================================================
    Home page: two-column layout (About + Tags on left, posts on right)
    ========================================================================== */
 
 .home-grid {
   display: grid;
-  grid-template-columns: 260px 1fr;
+  grid-template-columns: 300px 1fr;
   gap: 2rem;
   align-items: start;
 }
@@ -18,6 +38,8 @@
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+  position: sticky;
+  top: 76px;
 }
 
 .home-left .panel {
@@ -67,11 +89,19 @@
 }
 
 /* Right column: post summaries */
+.home-right {
+  min-width: 0;
+}
+
 .home-right .section-heading {
   margin-top: 0;
 }
 
+/* Post summary rows with thumbnail */
 .post-summary {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   padding-bottom: 1.5rem;
   margin-bottom: 1.5rem;
@@ -81,8 +111,39 @@
   border-bottom: none;
 }
 
+.post-thumb {
+  flex: 0 0 200px;
+  width: 200px;
+  max-width: 40%;
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.post-thumb img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.post-thumb:hover img {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
+
+.post-summary-body {
+  flex: 1;
+  min-width: 0;
+}
+
 .post-summary-title {
   margin: 0 0 0.25rem;
+  font-size: 1.35rem;
 }
 
 .post-summary-title a {
@@ -102,14 +163,16 @@
 }
 
 .post-excerpt {
-  color: #d9e0e8;
-  margin-bottom: 0.6rem;
+  color: #c9d1d9;
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
 }
 
 .read-more {
   color: #2eacff;
   text-decoration: none;
   font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .read-more:hover {
@@ -123,6 +186,7 @@
 
 .post-body {
   margin-top: 1.25rem;
+  max-width: 85ch;
 }
 
 .post-body img {
@@ -136,9 +200,39 @@
   padding-top: 1rem;
 }
 
-/* Responsive: stack columns on small screens */
-@media (max-width: 720px) {
+/* ==========================================================================
+   Responsive: adapt down gracefully, capping width on large screens.
+   ========================================================================== */
+
+@media (max-width: 960px) {
   .home-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .home-left {
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .home-left .panel {
+    flex: 1 1 240px;
+  }
+}
+
+@media (max-width: 560px) {
+  .post-summary {
+    flex-direction: column;
+  }
+
+  .post-thumb {
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .post-thumb img {
+    height: 180px;
   }
 }
