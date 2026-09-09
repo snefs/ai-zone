@@ -12,7 +12,14 @@
 {% assign has_tags = false %}
 {% for tag in unique_tags %}
   {% if tag != "" %}
-    {% assign has_tags = true %}
+    {% for post in section_posts %}
+      {% for post_tag in post.tags %}
+        {% assign normalized_post_tag = post_tag | downcase | strip | replace: " ", "-" %}
+        {% if normalized_post_tag == tag and post.url %}
+          {% assign has_tags = true %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
   {% endif %}
 {% endfor %}
 
@@ -41,12 +48,14 @@
             {% endif %}
           {% endfor %}
         {% endfor %}
-        <li class="tag-item weight-{{ weight }}">
-          <a class="tag-link" href="{{ tag_href }}">
-            <span class="tag">{{ tag }}</span>
-            <span class="tag-count">{{ tag_count }}</span>
-          </a>
-        </li>
+        {% if tag_href != "#" %}
+          <li class="tag-item weight-{{ weight }}">
+            <a class="tag-link" href="{{ tag_href }}">
+              <span class="tag">{{ tag }}</span>
+              <span class="tag-count">{{ tag_count }}</span>
+            </a>
+          </li>
+        {% endif %}
       {% endif %}
     {% endfor %}
   </ul>
