@@ -5,24 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }} | {{ site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
   {% seo %}
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
-    </nav>
-  </header>
-  <main>
-    <article>
-      <h1>{{ page.title }}</h1>
+  <div class="bg" aria-hidden="true"></div>
+  <div class="hero">
+    <span class="logo">{{ site.title | slice: 0, 1 }}</span>
+    <div>
+      <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+      <p class="tagline">{{ site.description }}</p>
+    </div>
+  </div>
+
+  <main class="content single">
+    <article class="post-card full">
+      <h1 class="post-title">{{ page.title }}</h1>
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
-      {{ content }}
+      <div class="post-body">{{ content }}</div>
     </article>
-    <a href="{{ '/' | relative_url }}">← Back to all posts</a>
+    <a class="read-more back" href="{{ '/' | relative_url }}">← Back to all posts</a>
   </main>
-  <footer>
+
+  <footer class="single-footer">
     <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
   </footer>
 </body>
