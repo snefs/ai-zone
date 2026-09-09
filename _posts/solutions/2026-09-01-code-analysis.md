@@ -19,7 +19,7 @@ You will not read every line an agent produces. Pretending otherwise is how half
 Code analysis is the part of review that can run every time, on every diff, without getting tired:
 
 - linters and formatters so style is not a debate
-- complexity and duplication checks so the intern does not invent a fourth pattern
+- complexity and duplication checks so the agent does not invent a fourth pattern
 - security scanners for the boring, dangerous mistakes
 - architecture tests that fail when a layer is skipped
 

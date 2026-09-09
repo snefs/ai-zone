@@ -15,7 +15,9 @@ tags:
 
 ## Budgets are the new estimates
 
-Token economics only feels shady until you treat spend like any other production resource.
+There is no cost estimation tool. Departments are already burning tokens, validating if this spend is justified is nearly impossoble.
+
+The more the path of agents is adopted, and proprietary models are used, the harder it becomes to predict and control costs. Systems will be so tightly integrated with a specific vendor.
 
 Hours used to be the constraint. Now the constraint is retries, context windows, and the moment you are halfway through a task with no tokens left. That is not a billing annoyance. That is an unfinished system.
 

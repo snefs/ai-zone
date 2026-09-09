@@ -23,6 +23,7 @@ Before you let an intern-with-infinite-energy touch production, you need a layer
 - security defaults: secrets, auth, data handling
 - business invariants: what must never change without a person
 - coding standards that are machine-checkable, not a wiki page
+- no automatic deployment without approvals from end-2-end tests - even if the agent says it is really really good
 
 The point is not to slow the agent down. The point is to make the cheap path the safe path.
 

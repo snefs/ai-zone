@@ -3,6 +3,10 @@
     <a class="post-thumb" href="{{ post.url | relative_url }}" aria-hidden="true">
       <img src="{{ post.thumbnail | relative_url }}" alt="" loading="lazy">
     </a>
+  {% elsif post.section == "problems" %}
+    <a class="post-thumb" href="{{ post.url | relative_url }}" aria-hidden="true">
+      <img src="{{ '/assets/ai-problem-default.png' | relative_url }}" alt="" loading="lazy">
+    </a>
   {% else %}
     <a class="post-thumb post-thumb--placeholder" href="{{ post.url | relative_url }}" aria-hidden="true">
       <span>{{ post.section }}</span>
