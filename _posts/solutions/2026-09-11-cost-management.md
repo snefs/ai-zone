@@ -4,6 +4,8 @@ title: "Cost management"
 date: 2026-09-11
 section: solutions
 description: "Budgets, routing, and treating tokens like a real engineering constraint."
+thumbnail: /assets/ai-cost-calc.png
+
 ---
 
 ## Budgets are the new estimates

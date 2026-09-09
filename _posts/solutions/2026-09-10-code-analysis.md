@@ -4,6 +4,7 @@ title: "Code analysis"
 date: 2026-09-10
 section: solutions
 description: "Static analysis as the reviewer when agents write most of the diff."
+thumbnail: /assets/ai-code-quality.png
 ---
 
 ## Static analysis as the reviewer
