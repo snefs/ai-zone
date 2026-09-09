@@ -22,3 +22,5 @@ The agent can write the code. The pipeline decides whether it is allowed to stay
 This also answers a quieter problem: if nobody on the team can still judge the output, analysis is the last honest signal you have. Raise the bar in tools, not in a pull-request comment that nobody has time to write.
 
 If CI is green and the change still feels wrong, that is a missing rule — add it. Do not rely on remembering next time.
+
+TODO: EXAMPLE / LINKS

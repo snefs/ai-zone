@@ -22,3 +22,5 @@ What actually helps:
 If you cannot answer "what did this feature cost in tokens, and did we get what we paid for?", you are not managing cost. You are hoping.
 
 Estimation is dead. Budgeting is alive. Put a number on the run before you start it.
+
+TODO: EXAMPLE / LINKS

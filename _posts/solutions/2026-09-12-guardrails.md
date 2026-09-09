@@ -22,3 +22,5 @@ The point is not to slow the agent down. The point is to make the cheap path the
 A prompt that says "please follow best practices" is not a guardrail. A CI job that rejects the change is.
 
 Version those rules like code. When the agent starts routing around them, that is a product bug in your process, not a clever workaround.
+
+TODO: EXAMPLE / LINKS
