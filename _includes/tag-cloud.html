@@ -1,15 +1,42 @@
-{% if include.section == "solutions" %}
-  {% assign keywords = site.data.keywords_by_section.solutions %}
-{% else %}
-  {% assign keywords = site.data.keywords_by_section.problems %}
-{% endif %}
-{% if keywords and keywords.size > 0 %}
+{% assign section_posts = site.posts | where: "section", include.section %}
+{% capture tag_buffer %}
+  {% for post in section_posts %}
+    {% for tag in post.tags %}
+      {{ tag | downcase | strip | replace: " ", "-" }}|
+    {% endfor %}
+  {% endfor %}
+{% endcapture %}
+
+{% assign tag_names = tag_buffer | strip | split: "|" %}
+{% assign unique_tags = tag_names | uniq | sort %}
+{% assign has_tags = false %}
+{% for tag in unique_tags %}
+  {% if tag != "" %}
+    {% assign has_tags = true %}
+  {% endif %}
+{% endfor %}
+
+{% if has_tags %}
   <ul class="tag-cloud tag-cloud--{{ include.section }}">
-    {% for keyword in keywords %}
-      <li class="tag-item weight-{{ keyword.weight }}">
-        <span class="tag">{{ keyword.word }}</span>
-        <span class="tag-count">{{ keyword.count }}</span>
-      </li>
+    {% for tag in unique_tags %}
+      {% if tag != "" %}
+        {% assign tag_count = 0 %}
+        {% for tag_name in tag_names %}
+          {% if tag_name == tag %}
+            {% assign tag_count = tag_count | plus: 1 %}
+          {% endif %}
+        {% endfor %}
+        {% assign weight = tag_count | times: 2 %}
+        {% if weight > 5 %}
+          {% assign weight = 5 %}
+        {% elsif weight < 1 %}
+          {% assign weight = 1 %}
+        {% endif %}
+        <li class="tag-item weight-{{ weight }}">
+          <span class="tag">{{ tag }}</span>
+          <span class="tag-count">{{ tag_count }}</span>
+        </li>
+      {% endif %}
     {% endfor %}
   </ul>
 {% else %}
