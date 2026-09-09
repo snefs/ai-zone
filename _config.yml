@@ -5,6 +5,7 @@ baseurl: "/ai-zone"
 url: "https://ai-zone.dev"
 
 theme: jekyll-theme-midnight
+future: true
 
 markdown: kramdown
 highlighter: rouge
