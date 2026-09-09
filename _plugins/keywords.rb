@@ -19,7 +19,14 @@ module Jekyll
 
       site.posts.docs.each do |post|
         section = post.data["section"].to_s
-        section = "problems" if section.empty?
+        path = post.relative_path.to_s
+        if path.include?("/solutions/")
+          section = "solutions"
+        elsif path.include?("/problems/")
+          section = "problems"
+        elsif section.empty?
+          section = "problems"
+        end
         words_in(post.content).each { |word| by_section[section][word] += 1 }
       end
 
