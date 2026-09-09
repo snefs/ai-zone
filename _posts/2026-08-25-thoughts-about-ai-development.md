@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Thoughts about AI Development"
-date: 2026-09-09
+date: 2026-08-25
 description: "Reflections on AI-assisted development, token economics, and the future of coding."
 ---
 
@@ -23,12 +23,3 @@ This made me wonder how to assess when to release and by what standards and it g
 - is our ci/cd process ready to incorporate ai generated code (code complexity/architecture/guardrails defined- in place)?
 - assuming agents will maintain the application, why not just wait with the release until this is possible?
 
-## Is a bad idea not the core problem of a process, what if you're already doing something wrong, will AI fix it?
-
-<img src="{{ '/assets/ai-bad-idea.png' | relative_url }}" alt="AI and bad ideas" />
-
-## Token economics
-
-How is it possible that the shady token economics are accepted. People are going to depend so much on Agents / apps that are updated/created when suddenly the budget is gone, who will still have the knowledge to 'complete' a task. Buckle up, half backed software is coming!
-
-<img src="{{ '/assets/ai-outoftokens.png' | relative_url }}" alt="Running out of tokens" />
