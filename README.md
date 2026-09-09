@@ -2,7 +2,16 @@
 
 see: https://snefs.github.io/ai-zone
 
-# Upcoming posts
+# Upcoming posts - solutions
+
+- Static code analysis
+- Guardrails
+- Monitoring
+- Focus on end-2-end testing
+- Focus on describing requirements clearly/smart
+- Budgets/cost management
+
+# Upcoming posts - proboems
 
 ---
 layout: post
