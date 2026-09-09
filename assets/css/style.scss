@@ -107,7 +107,7 @@ iframe {
 }
 
 .wrapper section #title h1 {
-  font-size: clamp(1.4rem, 4vw + 0.6rem, 2.75rem);
+  font-size: #{"clamp(1.4rem, 4vw + 0.6rem, 2.75rem)"};
   line-height: 1.15;
   text-transform: uppercase;
   text-shadow: 0 0 22px rgba(0, 255, 156, 0.35);
@@ -399,7 +399,7 @@ nav,
 
 .post-summary-title {
   margin: 0 0 0.25rem;
-  font-size: clamp(1rem, 1.5vw + 0.75rem, 1.35rem);
+  font-size: #{"clamp(1rem, 1.5vw + 0.75rem, 1.35rem)"};
   overflow-wrap: anywhere;
 }
 
