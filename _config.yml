@@ -3,7 +3,7 @@ description: Thoughts about AI Development
 baseurl: "/ai-zone"
 url: "https://ai-zone.dev"
 
-theme: minima
+theme: jekyll-theme-midnight
 
 markdown: kramdown
 highlighter: rouge
@@ -12,6 +12,13 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
+# About section shown in the left column of the home page
+about: >-
+  Hi, welcome to AI Zone. This is a space where I collect my thoughts on
+  building software with AI agents, the changing role of developers, and the
+  practical realities of shipping AI-assisted products.
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-relative-links

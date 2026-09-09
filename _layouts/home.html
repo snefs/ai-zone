@@ -1,55 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ site.title }}</title>
-  <meta name="description" content="{{ site.description }}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
-  {% seo %}
-</head>
-<body>
-  <div class="bg" aria-hidden="true"></div>
-  <div class="hero">
-    <span class="logo">{{ site.title | slice: 0, 1 }}</span>
-    <div>
-      <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-      <p class="tagline">{{ site.description }}</p>
+---
+layout: default
+---
+
+<div class="home-grid">
+
+  <aside class="home-left">
+    <div class="panel">
+      <h2>About</h2>
+      <p>{{ site.about }}</p>
     </div>
-  </div>
 
-  <main class="content">
-    <div class="home-grid">
-      <div class="home-posts">
-        {% for post in site.posts %}
-          <article class="post-card">
-            <h2 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
-            <div class="excerpt">{{ post.content | strip_html | truncatewords: 140 }}</div>
-            <a class="read-more" href="{{ post.url | relative_url }}">Read more →</a>
-          </article>
-        {% endfor %}
-      </div>
-
-      <aside class="sidebar">
-        <h2 class="sidebar-heading">All Posts</h2>
-        <ul>
-          {% for post in site.posts %}
-            <li>
-              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-              <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+    <div class="panel">
+      <h2>Tags</h2>
+      {% if site.data.keywords and site.data.keywords.size > 0 %}
+        <ul class="tag-list">
+          {% for keyword in site.data.keywords %}
+            <li class="tag-item">
+              <span class="tag">{{ keyword.word }}</span>
+              <span class="tag-count">{{ keyword.count }}</span>
             </li>
           {% endfor %}
         </ul>
-      </aside>
+      {% else %}
+        <p>No tags yet.</p>
+      {% endif %}
     </div>
-  </main>
+  </aside>
 
-  <footer class="single-footer">
-    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
-  </footer>
-</body>
-</html>
+  <div class="home-right">
+    <h2 class="section-heading">Recent Posts</h2>
+
+    {% for post in site.posts %}
+      <article class="post-summary">
+        <h3 class="post-summary-title">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h3>
+        <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">
+          {{ post.date | date: "%B %-d, %Y" }}
+        </time>
+        <p class="post-excerpt">{{ post.content | strip_html | truncatewords: 60 }}</p>
+        <a class="read-more" href="{{ post.url | relative_url }}">Read more &rarr;</a>
+      </article>
+    {% endfor %}
+  </div>
+
+</div>

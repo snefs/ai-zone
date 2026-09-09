@@ -1,0 +1,144 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* ==========================================================================
+   Home page: two-column layout (About + Tags on left, posts on right)
+   ========================================================================== */
+
+.home-grid {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.home-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.home-left .panel {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 1.25rem;
+}
+
+.home-left .panel h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding-bottom: 0.5rem;
+}
+
+/* Tag cloud */
+.tag-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: rgba(46, 172, 255, 0.12);
+  border: 1px solid rgba(46, 172, 255, 0.35);
+  border-radius: 999px;
+  padding: 0.2rem 0.65rem;
+  font-size: 0.82rem;
+}
+
+.tag-item .tag {
+  color: #2eacff;
+  font-weight: 600;
+}
+
+.tag-item .tag-count {
+  color: #8f9aa8;
+  font-size: 0.72rem;
+}
+
+/* Right column: post summaries */
+.home-right .section-heading {
+  margin-top: 0;
+}
+
+.post-summary {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.post-summary:last-child {
+  border-bottom: none;
+}
+
+.post-summary-title {
+  margin: 0 0 0.25rem;
+}
+
+.post-summary-title a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.post-summary-title a:hover {
+  color: #2eacff;
+}
+
+.post-date {
+  display: block;
+  color: #8f9aa8;
+  font-size: 0.85rem;
+  margin-bottom: 0.6rem;
+}
+
+.post-excerpt {
+  color: #d9e0e8;
+  margin-bottom: 0.6rem;
+}
+
+.read-more {
+  color: #2eacff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* Full post page */
+.post-full-title {
+  margin-bottom: 0.25rem;
+}
+
+.post-body {
+  margin-top: 1.25rem;
+}
+
+.post-body img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+.back-link {
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 1rem;
+}
+
+/* Responsive: stack columns on small screens */
+@media (max-width: 720px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+}
