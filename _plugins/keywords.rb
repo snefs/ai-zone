@@ -11,27 +11,42 @@ module Jekyll
       most some such only other while after before didn don if new up out
     ].freeze
 
-    MIN_MENTIONS = 3
-    MAX_KEYWORDS = 10
+    MIN_MENTIONS = 2
+    MAX_KEYWORDS = 12
 
     def generate(site)
-      counts = Hash.new(0)
-      site.posts.docs.each do |post|
-        text = post.content
-          .gsub(/\{%[^%]*%\}/, " ")
-          .gsub(/\{\{[^}]*\}\}/, " ")
-          .gsub(/```.*?```/m, " ")
-          .gsub(/<[^>]+>/, " ")
+      by_section = Hash.new { |h, k| h[k] = Hash.new(0) }
 
-        words = text.downcase.scan(/[a-z][a-z'\-]*/)
-        words.each { |word| counts[word] += 1 }
+      site.posts.docs.each do |post|
+        section = post.data["section"].to_s
+        section = "problems" if section.empty?
+        words_in(post.content).each { |word| by_section[section][word] += 1 }
       end
 
-      counts.delete_if { |word, count| count < MIN_MENTIONS || STOPWORDS.include?(word) }
+      site.data["keywords_by_section"] = by_section.transform_values { |counts| pack(counts) }
+    end
 
-      ranked = counts.sort_by { |word, count| [-count, word] }
-      site.data["keywords"] = ranked.first(MAX_KEYWORDS).map do |word, count|
-        { "word" => word, "count" => count }
+    private
+
+    def words_in(content)
+      text = content
+        .gsub(/\{%[^%]*%\}/, " ")
+        .gsub(/\{\{[^}]*\}\}/, " ")
+        .gsub(/```.*?```/m, " ")
+        .gsub(/<[^>]+>/, " ")
+
+      text.downcase.scan(/[a-z][a-z'\-]*/)
+    end
+
+    def pack(counts)
+      counts.delete_if { |word, count| count < MIN_MENTIONS || STOPWORDS.include?(word) }
+      ranked = counts.sort_by { |word, count| [-count, word] }.first(MAX_KEYWORDS)
+      max = ranked.first&.last.to_f
+      max = 1 if max < 1
+
+      ranked.map do |word, count|
+        weight = ((count / max) * 4).round + 1
+        { "word" => word, "count" => count, "weight" => weight }
       end
     end
   end

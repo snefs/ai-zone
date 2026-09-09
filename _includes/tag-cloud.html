@@ -1,0 +1,17 @@
+{% if include.section == "solutions" %}
+  {% assign keywords = site.data.keywords_by_section.solutions %}
+{% else %}
+  {% assign keywords = site.data.keywords_by_section.problems %}
+{% endif %}
+{% if keywords and keywords.size > 0 %}
+  <ul class="tag-cloud tag-cloud--{{ include.section }}">
+    {% for keyword in keywords %}
+      <li class="tag-item weight-{{ keyword.weight }}">
+        <span class="tag">{{ keyword.word }}</span>
+        <span class="tag-count">{{ keyword.count }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p class="tag-empty">No tags yet.</p>
+{% endif %}

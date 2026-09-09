@@ -2,47 +2,27 @@
 layout: default
 ---
 
-<div class="home-grid">
+<div class="home-about panel">
+  <h2>About</h2>
+  <p>{{ site.about }}</p>
+</div>
 
-  <aside class="home-left">
-    <div class="panel">
-      <h2>About</h2>
-      <p>{{ site.about }}</p>
-    </div>
+<div class="split-screen">
+  {% assign problem_posts = site.posts | where: "section", "problems" %}
+  <section class="post-section post-section--problems">
+    <h2 class="section-heading">Problems</h2>
+    {% include tag-cloud.html section="problems" %}
+    {% for post in problem_posts %}
+      {% include post-summary.html %}
+    {% endfor %}
+  </section>
 
-    <div class="panel">
-      <h2>Tags</h2>
-      {% if site.data.keywords and site.data.keywords.size > 0 %}
-        <ul class="tag-list">
-          {% for keyword in site.data.keywords %}
-            <li class="tag-item">
-              <span class="tag">{{ keyword.word }}</span>
-              <span class="tag-count">{{ keyword.count }}</span>
-            </li>
-          {% endfor %}
-        </ul>
-      {% else %}
-        <p>No tags yet.</p>
-      {% endif %}
-    </div>
-  </aside>
-
-  <div class="home-right">
-    {% assign problem_posts = site.posts | where: "section", "problems" %}
-    <section class="post-section post-section--problems">
-      <h2 class="section-heading">Problems</h2>
-      {% for post in problem_posts %}
-        {% include post-summary.html %}
-      {% endfor %}
-    </section>
-
-    {% assign solution_posts = site.posts | where: "section", "solutions" %}
-    <section class="post-section post-section--solutions">
-      <h2 class="section-heading">Solutions</h2>
-      {% for post in solution_posts %}
-        {% include post-summary.html %}
-      {% endfor %}
-    </section>
-  </div>
-
+  {% assign solution_posts = site.posts | where: "section", "solutions" %}
+  <section class="post-section post-section--solutions">
+    <h2 class="section-heading">Solutions</h2>
+    {% include tag-cloud.html section="solutions" %}
+    {% for post in solution_posts %}
+      {% include post-summary.html %}
+    {% endfor %}
+  </section>
 </div>

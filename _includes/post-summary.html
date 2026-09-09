@@ -16,7 +16,7 @@
     <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">
       {{ post.date | date: "%B %-d, %Y" }}
     </time>
-    <p class="post-excerpt">{{ post.content | strip_html | truncatewords: 120 }}</p>
+    <p class="post-excerpt">{{ post.content | strip_html | truncatewords: 50 }}</p>
     <a class="read-more" href="{{ post.url | relative_url }}">Read more &rarr;</a>
   </div>
 </article>
