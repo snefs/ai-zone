@@ -28,28 +28,21 @@ layout: default
   </aside>
 
   <div class="home-right">
-    <h2 class="section-heading">Recent Posts</h2>
+    {% assign problem_posts = site.posts | where: "section", "problems" %}
+    <section class="post-section post-section--problems">
+      <h2 class="section-heading">Problems</h2>
+      {% for post in problem_posts %}
+        {% include post-summary.html %}
+      {% endfor %}
+    </section>
 
-    {% for post in site.posts %}
-      <article class="post-summary">
-        {% if post.thumbnail %}
-          <a class="post-thumb" href="{{ post.url | relative_url }}" aria-hidden="true">
-            <img src="{{ post.thumbnail | relative_url }}" alt="" loading="lazy">
-          </a>
-        {% endif %}
-
-        <div class="post-summary-body">
-          <h3 class="post-summary-title">
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          </h3>
-          <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">
-            {{ post.date | date: "%B %-d, %Y" }}
-          </time>
-          <p class="post-excerpt">{{ post.content | strip_html | truncatewords: 120 }}</p>
-          <a class="read-more" href="{{ post.url | relative_url }}">Read more &rarr;</a>
-        </div>
-      </article>
-    {% endfor %}
+    {% assign solution_posts = site.posts | where: "section", "solutions" %}
+    <section class="post-section post-section--solutions">
+      <h2 class="section-heading">Solutions</h2>
+      {% for post in solution_posts %}
+        {% include post-summary.html %}
+      {% endfor %}
+    </section>
   </div>
 
 </div>
