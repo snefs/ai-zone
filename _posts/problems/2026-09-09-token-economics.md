@@ -5,6 +5,11 @@ date: 2026-09-09
 section: problems
 description: "Reflections on AI-assisted development, token economics, and the future of coding."
 thumbnail: /assets/ai-outoftokens.png
+tags:
+  - token economics
+  - cost risk
+  - knowledge loss
+  - incomplete work
 ---
 
 ## Token economics

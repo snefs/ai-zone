@@ -5,6 +5,11 @@ date: 2026-09-10
 section: solutions
 description: "Static analysis as the reviewer when agents write most of the diff."
 thumbnail: /assets/ai-code-quality.png
+tags:
+  - static analysis
+  - code quality
+  - ci rules
+  - security
 ---
 
 ## Static analysis as the reviewer

@@ -5,6 +5,11 @@ date: 2026-09-12
 section: solutions
 description: "What needs to exist before you let agents loose on a codebase."
 thumbnail: /assets/ai-guardrails.png
+tags:
+  - guardrails
+  - ci rules
+  - architecture
+  - safety
 
 ---
 

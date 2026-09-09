@@ -5,6 +5,11 @@ date: 2026-09-11
 section: solutions
 description: "Budgets, routing, and treating tokens like a real engineering constraint."
 thumbnail: /assets/ai-cost-calc.png
+tags:
+  - cost management
+  - token budgets
+  - model routing
+  - fallback plan
 
 ---
 

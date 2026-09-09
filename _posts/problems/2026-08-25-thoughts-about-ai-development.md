@@ -5,6 +5,11 @@ date: 2026-08-25
 section: problems
 description: "Reflections on AI-assisted development, token economics, and the future of coding."
 thumbnail: /assets/ai-more-work.png
+tags:
+  - agent workflow
+  - product ownership
+  - maintenance
+  - release readiness
 ---
 
 ## Is work faster, or do we have more work to manage?
@@ -24,4 +29,3 @@ This made me wonder how to assess when to release and by what standards and it g
 - do we make the code easy to read for a human?
 - is our ci/cd process ready to incorporate ai generated code (code complexity/architecture/guardrails defined- in place)?
 - assuming agents will maintain the application, why not just wait with the release until this is possible?
-

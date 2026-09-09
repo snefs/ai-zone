@@ -27,7 +27,9 @@ module Jekyll
         elsif section.empty?
           section = "problems"
         end
-        words_in(post.content).each { |word| by_section[section][word] += 1 }
+        tags = tags_in(post)
+        terms = tags.empty? ? words_in(post.content) : tags
+        terms.each { |word| by_section[section][word] += 1 }
       end
 
       site.data["keywords_by_section"] = by_section.transform_values { |counts| pack(counts) }
@@ -43,6 +45,12 @@ module Jekyll
         .gsub(/<[^>]+>/, " ")
 
       text.downcase.scan(/[a-z][a-z'\-]*/)
+    end
+
+    def tags_in(post)
+      Array(post.data["tags"]).map do |tag|
+        tag.to_s.downcase.strip.gsub(/\s+/, "-")
+      end.reject(&:empty?)
     end
 
     def pack(counts)
