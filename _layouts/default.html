@@ -8,31 +8,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600&family=Orbitron:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
   </head>
   <body>
-    <div id="header">
-      <nav>
-        <ul>
-          <li class="fork">
-            <a href="{{ site.github.repository_url | default: 'https://github.com/snefs/ai-zone' }}">View On GitHub</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-
-    <div class="wrapper">
-      <section>
-        <div id="title">
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
-          <p>{{ site.tagline | default: site.description | default: site.github.project_tagline }}</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="{{ site.github.owner_url | default: 'https://github.com/snefs' }}">{{ site.github.owner_name | default: 'snefs' }}</a></span>
-          <span class="credits right">Hosted on GitHub Pages</span>
+    <div class="phone-frame">
+      <span class="phone-btn phone-btn--silent"></span>
+      <span class="phone-btn phone-btn--vol-up"></span>
+      <span class="phone-btn phone-btn--vol-down"></span>
+      <span class="phone-btn phone-btn--power"></span>
+      <div class="phone-island" aria-hidden="true"></div>
+      <div class="phone-screen">
+        <div id="header">
+          <nav>
+            <ul>
+              <li class="fork">
+                <a href="{{ site.github.repository_url | default: 'https://github.com/snefs/ai-zone' }}">View On GitHub</a>
+              </li>
+            </ul>
+          </nav>
         </div>
 
-        {{ content }}
-      </section>
+        <div class="wrapper">
+          <section>
+            <div id="title">
+              <h1>{{ site.title | default: site.github.repository_name }}</h1>
+              <p>{{ site.tagline | default: site.description | default: site.github.project_tagline }}</p>
+              <hr>
+              <span class="credits left">Project maintained by <a href="{{ site.github.owner_url | default: 'https://github.com/snefs' }}">{{ site.github.owner_name | default: 'snefs' }}</a></span>
+              <span class="credits right">Hosted on GitHub Pages</span>
+            </div>
+
+            {{ content }}
+          </section>
+        </div>
+      </div>
+      <div class="phone-home" aria-hidden="true"></div>
     </div>
   </body>
 </html>

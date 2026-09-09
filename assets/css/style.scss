@@ -418,3 +418,179 @@ hr {
     display: none;
   }
 }
+
+.phone-btn,
+.phone-island,
+.phone-home {
+  display: none;
+}
+
+@media (max-width: 6.9in) {
+  html,
+  body {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  body {
+    padding: 0;
+    background: #000;
+    background-image: none;
+  }
+
+  body::after {
+    display: none;
+  }
+
+  .phone-frame {
+    position: relative;
+    width: min(calc(100vw - 12px), 430px);
+    height: min(calc(100dvh - 12px), 932px);
+    margin: 6px auto;
+    border-radius: 48px;
+    background: #0a0e14;
+    border: 3px solid #1c2430;
+    box-shadow:
+      0 0 0 1px rgba(0, 212, 255, 0.25),
+      0 0 28px rgba(0, 255, 156, 0.18),
+      inset 0 0 0 2px #05070c;
+    overflow: hidden;
+  }
+
+  .phone-btn {
+    display: block;
+    position: absolute;
+    background: #1a222c;
+    z-index: 5;
+  }
+
+  .phone-btn--silent {
+    left: -3px;
+    top: 98px;
+    width: 4px;
+    height: 22px;
+    border-radius: 2px 0 0 2px;
+  }
+
+  .phone-btn--vol-up {
+    left: -3px;
+    top: 140px;
+    width: 4px;
+    height: 36px;
+    border-radius: 2px 0 0 2px;
+  }
+
+  .phone-btn--vol-down {
+    left: -3px;
+    top: 184px;
+    width: 4px;
+    height: 36px;
+    border-radius: 2px 0 0 2px;
+  }
+
+  .phone-btn--power {
+    right: -3px;
+    top: 168px;
+    width: 4px;
+    height: 64px;
+    border-radius: 0 2px 2px 0;
+  }
+
+  .phone-island {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    width: 118px;
+    height: 34px;
+    transform: translateX(-50%);
+    background: #000;
+    border-radius: 20px;
+    z-index: 30;
+    box-shadow: 0 0 0 1px rgba(0, 212, 255, 0.15);
+  }
+
+  .phone-home {
+    display: block;
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    width: 128px;
+    height: 5px;
+    transform: translateX(-50%);
+    background: rgba(232, 251, 255, 0.45);
+    border-radius: 99px;
+    z-index: 30;
+    pointer-events: none;
+  }
+
+  .phone-screen {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 44px;
+    padding-top: 44px;
+    padding-bottom: 22px;
+  }
+
+  #header {
+    position: sticky;
+    top: 0;
+    height: 52px;
+    margin-top: 0;
+  }
+
+  nav,
+  #header nav {
+    display: block;
+  }
+
+  #header nav {
+    max-width: none;
+    padding: 0 16px;
+  }
+
+  #header nav ul li a {
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+
+  .wrapper {
+    padding: 0 16px;
+  }
+
+  .wrapper section {
+    margin-top: 12px;
+    padding: 12px 0 32px;
+  }
+
+  .wrapper section #title h1 {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+
+  #title p {
+    font-size: 13px;
+  }
+
+  #title .credits {
+    display: block;
+    float: none;
+    line-height: 1.5;
+  }
+
+  .home-about {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .post-section {
+    padding: 1rem 0.9rem 0.2rem;
+  }
+
+  .post-thumb img,
+  .post-thumb--placeholder {
+    height: 140px;
+  }
+}
