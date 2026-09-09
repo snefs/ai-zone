@@ -11,7 +11,7 @@ module Jekyll
       most some such only other while after before didn don if new up out
     ].freeze
 
-    MIN_MENTIONS = 2
+    MIN_MENTIONS = 1
     MAX_KEYWORDS = 12
 
     def generate(site)
