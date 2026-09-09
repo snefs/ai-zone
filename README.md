@@ -11,7 +11,7 @@ see: https://snefs.github.io/ai-zone
 - Focus on describing requirements clearly/smart
 - Budgets/cost management
 
-# Upcoming posts - proboems
+# Upcoming posts - problems
 
 ---
 layout: post
