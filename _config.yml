@@ -1,0 +1,17 @@
+title: AI Zone
+description: Thoughts about AI Development
+baseurl: "/ai-zone"
+url: "https://ai-zone.dev"
+
+theme: minima
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
