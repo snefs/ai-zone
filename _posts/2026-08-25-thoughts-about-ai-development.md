@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Thoughts about AI Development"
+title: "Developer: Before and after AI"
 date: 2026-08-25
 description: "Reflections on AI-assisted development, token economics, and the future of coding."
 thumbnail: /assets/ai-more-work.png
