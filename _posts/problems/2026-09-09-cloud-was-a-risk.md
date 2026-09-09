@@ -6,11 +6,16 @@ section: problems
 description: "Cloud was a risk by giving too much control to external providers..."
 thumbnail: 
 tags:
-- data breaches and misconfigurations
-- ownership
-- data loss and compliance
-- vendor lock-in
-- limited visibility
+  - cloud risk
+  - provider dependency
+  - vendor lock-in
+  - data breaches
+  - misconfiguration
+  - ownership
+  - compliance
+  - limited visibility
+  - local secrets
+  - ai agents
 
 ---
 

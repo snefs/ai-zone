@@ -8,8 +8,11 @@ thumbnail: /assets/ai-outoftokens.png
 tags:
   - token economics
   - cost risk
+  - ai agents
   - knowledge loss
   - incomplete work
+  - verification
+  - subscriptions
 ---
 
 ## Token economics

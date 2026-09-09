@@ -10,6 +10,10 @@ tags:
   - code quality
   - ci rules
   - security
+  - linters
+  - architecture tests
+  - duplication
+  - review automation
 ---
 
 ## Static analysis as the reviewer

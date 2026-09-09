@@ -10,6 +10,10 @@ tags:
   - token budgets
   - model routing
   - fallback plan
+  - vendor lock-in
+  - cost estimation
+  - spend control
+  - alerts
 
 ---
 

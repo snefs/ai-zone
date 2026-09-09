@@ -10,6 +10,9 @@ tags:
   - ci rules
   - architecture
   - safety
+  - approvals
+  - business invariants
+  - end to end tests
 
 ---
 

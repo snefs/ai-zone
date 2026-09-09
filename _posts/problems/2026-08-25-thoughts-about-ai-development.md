@@ -7,9 +7,12 @@ description: "Reflections on AI-assisted development, token economics, and the f
 thumbnail: /assets/ai-more-work.png
 tags:
   - agent workflow
+  - ai agents
   - product ownership
   - maintenance
   - release readiness
+  - ci cd
+  - human review
 ---
 
 ## Is work faster, or do we have more work to manage?

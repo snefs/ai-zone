@@ -51,7 +51,7 @@
         {% if tag_href != "#" %}
           <li class="tag-item weight-{{ weight }}">
             <a class="tag-link" href="{{ tag_href }}">
-              <span class="tag">{{ tag }}</span>
+              <span class="tag">{{ tag | replace: "-", " " }}</span>
               <span class="tag-count">{{ tag_count }}</span>
             </a>
           </li>
