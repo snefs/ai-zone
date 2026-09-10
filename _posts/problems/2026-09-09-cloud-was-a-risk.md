@@ -28,5 +28,6 @@ Some hints, it's the wild west out there;
 - Authentication and access tokens are stored in plain text (Codex / OpenCode) on the users computer
 - Logs of sessions are stored unencrypted on the users computer
 - Sensitive configuration files are accessible without proper permissions
+- already one example of data abuse (agent data used)[https://www.facebook.com/share/r/1HupVP7TLQ/]
 
 Let's make it even more complex and handover all the work to agents, with the capabilities to find security vulnerabilities and exploit them autonomously.....
