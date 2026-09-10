@@ -17,8 +17,9 @@ tags:
 
 ## Token economics
 
-How is it possible that the shady token economics are accepted. What is happening when a request is fulfilled, did you get what you expected, how can we verify?
-Who will still have the knowledge to 'complete' a task. Buckle up, half backed software is coming!
+How is it possible that the shady token economics are accepted. We have no clue what is happening when a request is fulfilled, did we get our moneys worth? How can we even verify if the billing accurate / let alone reliable?
+
+The bigger threat, once we run out of tokens/credits, in the middle of a task - which now doesn't get completed. Do we have even some-one available who can finish the job? Buckle up, half backed software is coming!
 
 Risks
 - Dependency on agents and apps: effectively means you're outsourcing knowledge on how to build software

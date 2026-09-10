@@ -21,9 +21,8 @@ tags:
 
 ## Haven't we seen this before?
 
-Significant risks have been identified in cloud computing, the solutions are not even in place and we are all diving full force into the risks of AI and depending on a few providers.
-
-We trust our data, our infrastructure, and our core processes to companies that potentially do anything with it, without full transparency or accountability.
+Significant risks have been identified in cloud computing, the solutions are not even in place and we are all diving full force into AI. The risks of AI and depending on a few providers has so much similarities with the Cloud;
+- We trust our data, our infrastructure, and our core processes to companies that potentially do anything with it, without full transparency or accountability.
 
 Some hints, it's the wild west out there;
 - Authentication and access tokens are stored in plain text (Codex / OpenCode) on the users computer

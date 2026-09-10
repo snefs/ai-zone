@@ -19,14 +19,13 @@ tags:
 
 ## Budgets are the new estimates
 
-There is no cost estimation tool. Departments are already burning tokens, validating if this spend is justified is nearly impossoble.
+There is currently no cost estimation tool for using AI at scale / agents. However, departments are already burning tokens, validating if this spend is justified is nearly impossible.
 
-The more the path of agents is adopted, and proprietary models are used, the harder it becomes to predict and control costs. Systems will be so tightly integrated with a specific vendor.
+The more the path of agents is adopted, and proprietary models are used, the harder it becomes to predict and control costs. Systems will become tightly integrated with a specific vendor.
 
-Hours used to be the constraint. Now the constraint is retries, context windows, and the moment you are halfway through a task with no tokens left. That is not a billing annoyance. That is an unfinished system.
+The constraint use to be availability of experts and the hours spent. Now the constraint is tokens, and having a clear goal, getting there takes retries, context windows, and the moment you are halfway through a task with no tokens left. That is not a billing annoyance. That is an unfinished system.
 
 What actually helps:
-
 - a budget per repo, per agent, per feature — with a hard stop, not a surprise invoice
 - cheaper models for search and boilerplate, expensive ones only when the task needs them
 - alerts before the cliff, not after
