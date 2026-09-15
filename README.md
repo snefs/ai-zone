@@ -1,6 +1,6 @@
 # Thoughts about AI Development
 
-see: https://snefs.github.io/ai-zone
+see: https://ai.itconnector.nl
 
 # Upcoming posts - solutions
 
