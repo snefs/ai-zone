@@ -13,13 +13,6 @@ see: https://snefs.github.io/ai-zone
 
 # Upcoming posts - problems
 
----
-layout: post
-title: "Blog Topic Suggestions: When Agents Take Over Development"
-date: 2026-09-09
-description: "A curated list of 30+ topics worth exploring as AI agents take over the day-to-day of software development."
----
-
 This is a working list of blog post ideas that arise once AI agents take over the development process and developers no longer write code directly. The categories below map to the questions that inevitably surface for teams, product owners, and leadership.
 
 ## Testing in an agent-driven world
@@ -100,4 +93,4 @@ This is a working list of blog post ideas that arise once AI agents take over th
 
 ---
 
-*This list is a starting point — pick any topic, expand the thinking, and turn it into a full post. Suggested next step: draft the first article and add it to `_posts/`.*
+ 
