@@ -35,4 +35,5 @@ If you cannot answer "what did this feature cost in tokens, and did we get what 
 
 Estimation is dead. Budgeting is alive. Put a number on the run before you start it.
 
-TODO: EXAMPLE / LINKS
+(One of the few calculators available)[https://www.finout.io/tools/ai-costs]
+(An AI Cost calculator like this would be nice)[https://azure.microsoft.com/en-us/pricing/calculator/]
