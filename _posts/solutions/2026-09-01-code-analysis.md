@@ -33,7 +33,7 @@ This also answers a quieter problem: if nobody on the team can still judge the o
 
 If CI is green and the change still feels wrong, that is a missing rule — add it. Do not rely on remembering next time.
 
-(awesome-static-analysis)[https://github.com/awesome-security/awesome-static-analysis]
+[list of analysis tools ->](https://github.com/awesome-security/awesome-static-analysis)
 
-![code complexity analysis](image.png)
+![code complexity analysis](/assets/analysis-complexity.png)
 

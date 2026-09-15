@@ -32,9 +32,9 @@ The point is not to slow the agent down. The point is to make the cheap path the
 
 A prompt that says "please follow best practices" is not a guardrail. A CI job that rejects the change is.
 
-## [AGENTS.MD](https://agents.md/)
+## [LINK: AGENTS.MD](https://agents.md/)
 On the project level you can create a file called AGENT.MD, that you can use to request tracability (e.g. with instructions such as: "When processing a reqest, Log the activity id, category, title, summary, start, end, duration), write the start time as soon as you start with the request in a file called AGENTLOG.csv" 
 
 If you have a repo with specific architecture styles are documentation you can use this.
 
-(guardrails library)[https://github.com/NVIDIA-NeMo/Guardrails]
+[guardrails library](https://github.com/NVIDIA-NeMo/Guardrails)
