@@ -1,8 +1,8 @@
 title: AI Zone
 description: Thoughts about AI Development
 repository: snefs/ai-zone
-baseurl: "/"
-url: "https://ai.itconnector.nl"
+baseurl: "/ai-zone/"
+url: "https://snefs.github.io/ai-zone/"
 
 theme: jekyll-theme-midnight
 future: true

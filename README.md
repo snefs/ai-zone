@@ -1,7 +1,6 @@
 # Thoughts about AI Development
 
 see: 
-- https://ai.itconnector.nl (this public repo)
 - https://www.itconnector.nl (company page)
 
 # Upcoming posts - solutions
