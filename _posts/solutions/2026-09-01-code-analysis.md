@@ -35,5 +35,5 @@ If CI is green and the change still feels wrong, that is a missing rule — add 
 
 [list of analysis tools ->](https://github.com/awesome-security/awesome-static-analysis)
 
-![code complexity analysis](/assets/analysis-complexity.png)
+<img src="{{ '/assets/analysis-complexity.png' | relative_url }}" alt="Analysis example - code complexity" />
 
