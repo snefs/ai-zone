@@ -8,20 +8,21 @@ layout: default
 </div>
 
 <div class="split-screen">
-  {% assign problem_posts = site.posts | where: "section", "problems" %}
-  <section class="post-section post-section--problems">
-    <h2 class="section-heading">Problems</h2>
-    {% include tag-cloud.html section="problems" %}
-    {% for post in problem_posts %}
-      {% include post-summary.html %}
-    {% endfor %}
-  </section>
-
+  
   {% assign solution_posts = site.posts | where: "section", "solutions" %}
   <section class="post-section post-section--solutions">
     <h2 class="section-heading">Solutions</h2>
     {% include tag-cloud.html section="solutions" %}
     {% for post in solution_posts %}
+      {% include post-summary.html %}
+    {% endfor %}
+  </section>
+  
+  {% assign problem_posts = site.posts | where: "section", "problems" %}
+  <section class="post-section post-section--problems">
+    <h2 class="section-heading">Problems</h2>
+    {% include tag-cloud.html section="problems" %}
+    {% for post in problem_posts %}
       {% include post-summary.html %}
     {% endfor %}
   </section>
