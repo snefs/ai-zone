@@ -1,5 +1,7 @@
 # Thoughts about AI Development
 
+Github pages: https://snefs.github.io/ai-zone
+
 see: 
 - https://www.itconnector.nl (company page)
 

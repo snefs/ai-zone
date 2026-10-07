@@ -30,31 +30,31 @@ All available architecture results containing `ScenarioA` or `ScenarioB`, groupe
 
 ## 1. Enterprise Integration — Scenario A
 
-- [big-pickle — Scenario A](/architecture-experiment/big-pickle.1.ScenarioA.md)
-- [Claude Sonnet 4.6 — Scenario A](/architecture-experiment/Claude-Sonnet-4.6.1.ScenarioA.md)
-- [Gemini 3.1 Pro — Scenario A](/architecture-experiment/Gemini-3.1-Pro.1.ScenarioA.md)
-- [GPT-5 — Scenario A](/architecture-experiment/GPT-5.1.ScenarioA.md)
+- [big-pickle — Scenario A](ai-zone/architecture-experiment/big-pickle.1.ScenarioA.md)
+- [Claude Sonnet 4.6 — Scenario A](/ai-zone/architecture-experiment/Claude-Sonnet-4.6.1.ScenarioA.md)
+- [Gemini 3.1 Pro — Scenario A](/ai-zone/architecture-experiment/Gemini-3.1-Pro.1.ScenarioA.md)
+- [GPT-5 — Scenario A](/ai-zone/architecture-experiment/GPT-5.1.ScenarioA.md)
 
 ## 1. Enterprise Integration — Scenario B
 
-- [big-pickle — Scenario B](/architecture-experiment/big-pickle.1.ScenarioB.md)
-- [Claude Sonnet 4.6 — Scenario B](/architecture-experiment/Claude-Sonnet-4.6.1.ScenarioB.md)
-- [Gemini 3.1 Pro — Scenario B](/architecture-experiment/Gemini-3.1-Pro.1.ScenarioB.md)
-- [GPT-5 — Scenario B](/architecture-experiment/GPT-5.1.ScenarioB.md)
+- [big-pickle — Scenario B](/ai-zone/architecture-experiment/big-pickle.1.ScenarioB.md)
+- [Claude Sonnet 4.6 — Scenario B](/ai-zone/architecture-experiment/Claude-Sonnet-4.6.1.ScenarioB.md)
+- [Gemini 3.1 Pro — Scenario B](/ai-zone/architecture-experiment/Gemini-3.1-Pro.1.ScenarioB.md)
+- [GPT-5 — Scenario B](/ai-zone/architecture-experiment/GPT-5.1.ScenarioB.md)
 
 ## 2. FrontEnd — Scenario A
 
-- [big-pickle — Scenario A](/architecture-experiment/big-pickle.2.ScenarioA.md)
-- [Claude Sonnet 4.6 — Scenario A](/architecture-experiment/Claude-Sonnet-4.6.2.ScenarioA.md)
-- [Gemini 3.1 Pro — Scenario A](/architecture-experiment/Gemini-3.1-Pro.2.ScenarioA.md)
-- [GPT-5 — Scenario A](/architecture-experiment/GPT-5.2.ScenarioA.md)
+- [big-pickle — Scenario A](/ai-zone/architecture-experiment/big-pickle.2.ScenarioA.md)
+- [Claude Sonnet 4.6 — Scenario A](/ai-zone/architecture-experiment/Claude-Sonnet-4.6.2.ScenarioA.md)
+- [Gemini 3.1 Pro — Scenario A](/ai-zone/architecture-experiment/Gemini-3.1-Pro.2.ScenarioA.md)
+- [GPT-5 — Scenario A](/ai-zone/architecture-experiment/GPT-5.2.ScenarioA.md)
 
 ## 2. FrontEnd — Scenario B
 
-- [big-pickle — Scenario B](/architecture-experiment/big-pickle.2.ScenarioB.md)
-- [Claude Sonnet 4.6 — Scenario B](/architecture-experiment/Claude-Sonnet-4.6.2.ScenarioB.md)
-- [Gemini 3.1 Pro — Scenario B](/architecture-experiment/Gemini-3.1-Pro.2.ScenarioB.md)
-- [GPT-5 — Scenario B](/architecture-experiment/GPT-5.2.ScenarioB.md)
+- [big-pickle — Scenario B](/ai-zone/architecture-experiment/big-pickle.2.ScenarioB.md)
+- [Claude Sonnet 4.6 — Scenario B](/ai-zone/architecture-experiment/Claude-Sonnet-4.6.2.ScenarioB.md)
+- [Gemini 3.1 Pro — Scenario B](/ai-zone/architecture-experiment/Gemini-3.1-Pro.2.ScenarioB.md)
+- [GPT-5 — Scenario B](/ai-zone/architecture-experiment/GPT-5.2.ScenarioB.md)
 
 
 
