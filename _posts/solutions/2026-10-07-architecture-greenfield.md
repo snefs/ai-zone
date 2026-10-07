@@ -4,7 +4,7 @@ title: "Architecture"
 date: 2026-10-7
 section: solutions
 description: "Think about the decisions made, results may vary"
-thumbnail: /assets/ai-validation.png
+thumbnail: /assets/ai-architecture.png
 tags:
   - architecture
 
