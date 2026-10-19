@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">A year of AI: the problem moved</title>
+  <desc id="desc">A timeline from autocomplete to a governed agent workflow, showing capability rising and engineering friction moving into review, cost and orchestration.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101827"/><stop offset="1" stop-color="#1d2940"/></linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#57d6c7"/><stop offset="1" stop-color="#d7a8ff"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000" flood-opacity=".25"/></filter>
+  </defs>
+  <rect width="1200" height="630" rx="30" fill="url(#bg)"/>
+  <circle cx="1080" cy="-30" r="230" fill="#57d6c7" opacity=".08"/>
+  <circle cx="60" cy="650" r="250" fill="#d7a8ff" opacity=".08"/>
+  <text x="72" y="88" fill="#fff" font-family="Arial, sans-serif" font-size="46" font-weight="700">A year of AI</text>
+  <text x="74" y="128" fill="#aebbd0" font-family="Arial, sans-serif" font-size="22">The capability rose. The problem moved.</text>
+  <path d="M120 330 C300 300 360 360 510 320 S740 230 870 270 S1040 210 1100 180" fill="none" stroke="url(#line)" stroke-width="7" stroke-linecap="round"/>
+  <g fill="#101827" stroke="#57d6c7" stroke-width="4" filter="url(#shadow)">
+    <circle cx="150" cy="325" r="18"/><circle cx="400" cy="337" r="18"/><circle cx="650" cy="280" r="18"/><circle cx="900" cy="260" r="18"/><circle cx="1090" cy="185" r="18"/>
+  </g>
+  <g fill="#fff" font-family="Arial, sans-serif">
+    <text x="105" y="395" font-size="20" font-weight="700">≤ 2025</text><text x="105" y="423" fill="#b8c5d8" font-size="17">Autocomplete</text><text x="105" y="447" fill="#b8c5d8" font-size="17">Rewrite it all</text>
+    <text x="355" y="395" font-size="20" font-weight="700">2026 Q1</text><text x="355" y="423" fill="#b8c5d8" font-size="17">Sidekick</text><text x="355" y="447" fill="#b8c5d8" font-size="17">Unit tests</text>
+    <text x="605" y="338" font-size="20" font-weight="700">2026 Q3</text><text x="605" y="366" fill="#b8c5d8" font-size="17">Agent</text><text x="605" y="390" fill="#b8c5d8" font-size="17">Token burner</text>
+    <text x="855" y="320" font-size="20" font-weight="700">2026 Q4</text><text x="855" y="348" fill="#b8c5d8" font-size="17">Skills + hooks</text><text x="855" y="372" fill="#b8c5d8" font-size="17">Model switching</text>
+  </g>
+  <rect x="72" y="505" width="1056" height="72" rx="16" fill="#0b111d" stroke="#394861"/>
+  <text x="105" y="550" fill="#57d6c7" font-family="Arial, sans-serif" font-size="22" font-weight="700">NEW BOTTLENECK</text>
+  <text x="330" y="550" fill="#fff" font-family="Arial, sans-serif" font-size="22">Review · Refactor · Cost · Trust</text>
+</svg>

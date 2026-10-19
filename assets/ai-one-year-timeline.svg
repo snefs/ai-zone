@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="1000" height="520" font-family="Consolas, monospace">
+  <rect width="1000" height="520" rx="10" fill="#07161f"/>
+  <text x="30" y="42" font-size="22" font-weight="bold" fill="#00ff9c">One year of AI: from autocomplete to agent ecosystem</text>
+  <!-- trust / capability bar -->
+  <text x="30" y="80" font-size="13" fill="#8fb8c8">trust in output &amp; scope of delegated work →</text>
+  <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#00d4ff" stop-opacity="0.25"/><stop offset="1" stop-color="#00ff9c"/></linearGradient></defs>
+  <rect x="30" y="90" width="940" height="10" rx="5" fill="url(#g)"/>
+  <g font-size="14" fill="#cfefff">
+    <!-- columns -->
+    <g>
+      <rect x="30" y="125" width="220" height="250" rx="8" fill="#0c2532" stroke="#00d4ff" stroke-opacity="0.5"/>
+      <text x="45" y="155" font-size="18" font-weight="bold" fill="#00d4ff">≤ 2025</text>
+      <text x="45" y="178" fill="#8fb8c8">Assistant</text>
+      <text x="45" y="210">• inline suggestions</text>
+      <text x="45" y="235">• small widgets /</text>
+      <text x="57" y="255">components (redo)</text>
+      <text x="45" y="280">• documents / text</text>
+    </g>
+    <g>
+      <rect x="270" y="125" width="220" height="250" rx="8" fill="#0c2532" stroke="#1fe0e0" stroke-opacity="0.6"/>
+      <text x="285" y="155" font-size="18" font-weight="bold" fill="#1fe0e0">2026 Q1</text>
+      <text x="285" y="178" fill="#8fb8c8">Sidekick</text>
+      <text x="285" y="210">• pair-coding</text>
+      <text x="285" y="235">• unit test generation</text>
+    </g>
+    <g>
+      <rect x="510" y="125" width="220" height="250" rx="8" fill="#0c2532" stroke="#3fe9c6" stroke-opacity="0.8"/>
+      <text x="525" y="155" font-size="18" font-weight="bold" fill="#3fe9c6">2026 Q3</text>
+      <text x="525" y="178" fill="#8fb8c8">Agent</text>
+      <text x="525" y="210">• blown away by</text>
+      <text x="537" y="230">capabilities</text>
+      <text x="525" y="255">• token burner 🔥</text>
+    </g>
+    <g>
+      <rect x="750" y="125" width="220" height="250" rx="8" fill="#0c2532" stroke="#00ff9c"/>
+      <text x="765" y="155" font-size="18" font-weight="bold" fill="#00ff9c">2026 Q4</text>
+      <text x="765" y="178" fill="#8fb8c8">Ecosystem</text>
+      <text x="765" y="210">• custom skills</text>
+      <text x="777" y="230">(quality, logging)</text>
+      <text x="765" y="255">• refactor generated</text>
+      <text x="777" y="275">code to standards</text>
+      <text x="765" y="300">• multi-model /</text>
+      <text x="777" y="320">multi-vendor</text>
+    </g>
+  </g>
+  <g stroke="#00ff9c" stroke-width="2" fill="#00ff9c">
+    <path d="M250 250h18"/><path d="M490 250h18"/><path d="M730 250h18"/>
+  </g>
+  <!-- foundation -->
+  <text x="30" y="410" font-size="13" fill="#8fb8c8">what made the difference — models got better, but the harness around them matters as much</text>
+  <g font-size="15" font-weight="bold" text-anchor="middle">
+    <rect x="30"  y="425" width="220" height="60" rx="8" fill="#0f3a2c" stroke="#00ff9c"/><text x="140" y="461" fill="#00ff9c">AGENTS.md</text>
+    <rect x="270" y="425" width="220" height="60" rx="8" fill="#0f3a2c" stroke="#00ff9c"/><text x="380" y="461" fill="#00ff9c">Skills</text>
+    <rect x="510" y="425" width="220" height="60" rx="8" fill="#0f3a2c" stroke="#00ff9c"/><text x="620" y="461" fill="#00ff9c">Hooks</text>
+    <rect x="750" y="425" width="220" height="60" rx="8" fill="#0f3a2c" stroke="#00ff9c"/><text x="860" y="461" fill="#00ff9c">Knowledge</text>
+  </g>
+</svg>

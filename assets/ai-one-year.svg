@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#05121c"/>
+      <stop offset="1" stop-color="#0a2230"/>
+    </linearGradient>
+    <linearGradient id="curve" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00d4ff"/>
+      <stop offset="1" stop-color="#00ff9c"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <g stroke="#00d4ff" stroke-opacity="0.08">
+    <path d="M0 100H800M0 200H800M0 300H800M0 400H800M0 500H800"/>
+    <path d="M100 0V600M200 0V600M300 0V600M400 0V600M500 0V600M600 0V600M700 0V600"/>
+  </g>
+  <path d="M80 480 C 260 470, 380 420, 470 330 S 640 140, 720 110" fill="none" stroke="url(#curve)" stroke-width="8" stroke-linecap="round"/>
+  <g font-family="Consolas, monospace" font-size="20" fill="#cfefff">
+    <circle cx="80" cy="480" r="12" fill="#00d4ff"/><text x="60" y="525">2025</text>
+    <circle cx="300" cy="455" r="12" fill="#00d4ff"/><text x="270" y="500">Q1</text>
+    <circle cx="500" cy="300" r="12" fill="#3fe9c6"/><text x="520" y="310">Q3</text>
+    <circle cx="720" cy="110" r="14" fill="#00ff9c"/><text x="660" y="160">Q4</text>
+  </g>
+  <text x="60" y="110" font-family="Consolas, monospace" font-size="54" font-weight="bold" fill="#00ff9c">1 year</text>
+  <text x="60" y="165" font-family="Consolas, monospace" font-size="34" fill="#00d4ff">with AI</text>
+  <text x="60" y="215" font-family="Consolas, monospace" font-size="20" fill="#8fb8c8">autocomplete → agents</text>
+</svg>
